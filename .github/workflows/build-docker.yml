@@ -54,8 +54,8 @@ jobs:
           IMAGE_TAG: raphaelmans/kub-sample-deploy:latest
           REPO: sample-deploy-app
           CONTAINER_NAME: sample-node
-          with:
-            args: set image deployment/$REPO $CONTAINER_NAME=$IMAGE_TAG
+        with:
+          args: set image deployment/$REPO $CONTAINER_NAME=$IMAGE_TAG
           
       - name: verify deployment
         uses: kodermax/kubectl-aws-eks@master
