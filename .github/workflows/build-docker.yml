@@ -52,10 +52,15 @@ jobs:
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
           IMAGE_TAG: raphaelmans/kub-sample-deploy:latest
+          REPO: sample-deploy-app
+          CONTAINER_NAME: sample-node
+          with:
+            args: set image deployment/$REPO $CONTAINER_NAME=$IMAGE_TAG
           
       - name: verify deployment
         uses: kodermax/kubectl-aws-eks@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+          REPO: sample-deploy-app
         with:
-          args: rollout status deployment/sample-deploy-app
+          args: rollout status deployment/$REPO

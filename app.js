@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     <p>Updated with github actions</p>
     <div>reivison 101</div>
     <div>Last reivison!!! </div>
+    <div>VERTY lasttt </div>
     <p>Try sending a request to /error and see what happens</p>
   `);
 });
