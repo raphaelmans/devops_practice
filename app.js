@@ -6,12 +6,7 @@ app.get('/', (req, res) => {
   res.send(`
     <h1>Hello from this NodeJS app!</h1>
     <h3>I am raphael Mansueto this is my app <h3>
-    <p>Updated with github actions</p>
-    <div>reivison 101</div>
-    <div>Last reivison!!! </div>
-    <div>VERTY lasttt </div>
-    <div> Ericka joyce antonio orejodos</div>
-    <p>Try sending a request to /error and see what happens</p>
+    <h2>Ericka joyce antonio orejodos is the love of my life</h2>
   `);
 });
 
