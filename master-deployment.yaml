@@ -29,4 +29,5 @@ spec:
     spec: 
       containers:
         - name: sample-node
-          image: raphaelmans/kub-sample-deploy
+          image: raphaelmans/kub-sample-deploy:latest
+          imagePullPolicy: "Always"
