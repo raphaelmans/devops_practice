@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send(`
     <h1>Hello from this NodeJS app!</h1>
     <h3>I am raphael Mansueto this is my app <h3>
-    <p>Updated!!</p>
+    <p>Updated with github actions</p>
     <p>Try sending a request to /error and see what happens</p>
   `);
 });
